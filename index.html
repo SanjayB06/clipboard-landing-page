@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="styles.css">
   <title>Frontend Mentor | Clipboard landing page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -17,12 +17,12 @@
 <body>
   <div class="container">
     <section class="hero">
-      <img id="logo" src="images/logo.svg" alt="Logo">
+      <div class="logo"><img id="logo" src="images/logo.svg" alt="Logo"></div>
       <h2>A history of everything you copy</h2>
       <p>Clipboard allows you to track and organize everything you copy. Instantly access your clipboard on all your devices</p>
       <div class="buttons">
-        <a href="#" id="ios" class="button">Download for iOS</a>
-        <a href="#" id="mac" class="button">Download for Mac</a>
+        <a href="#"  class="button ios">Download for iOS</a>
+        <a href="#"  class="button mac">Download for Mac</a>
       </div>
     </section>
     <section class="message">
@@ -68,7 +68,7 @@
           <h4>Plain text snippets</h4>
           <p>    Remove unwanted formatting from copied text for a consistent look.</p>
         </div>
-        <div class="feature"></div>
+        <div class="feature">
           <img src="images/icon-preview.svg" alt="preview">
           <h4>Sneak Preview</h4>
           <p>Quick preview of all snippets on your Clipboard for easy access.</p>
@@ -91,15 +91,16 @@
         <img src="images/logo-vector-graphics.png" alt="Vector Graphics">
       </div>
     </section>
-    <section class="end-message">
-      <h3>Clipboard for iOS and Mac OS</h3>
+    <section class="hero hero-bottom">
+      <h2>Clipboard for iOS and Mac OS</h3>
       <p>  Available for free on the App Store. Download for Mac or iOS, sync with iCloud 
         and you’re ready to start adding to your clipboard.</p>
       <div class="buttons">
-        <a href="#" id="ios" class="button">Download for iOS</a>
-        <a href="#" id="mac" class="button">Download for Mac</a>
+        <a href="#"  class="button ios">Download for iOS</a>
+        <a href="#" class="button mac">Download for Mac</a>
       </div>
     </section>
+  </div>
     <section class="footer">
       <img src="images/logo.svg" alt="Logo">
       <div class="text">
@@ -119,7 +120,6 @@
         <a href="#" class="social-link"><img src="images/icon-instagram.svg" alt="Instagram"></a>
       </div>
     </section>
-  </div>
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
