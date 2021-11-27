@@ -11,6 +11,9 @@
 
 body {
     text-align: center;
+    background-image: url("images/bg-header-mobile.png");
+    background-repeat: no-repeat;
+    background-position: right top;
 }
 p {
     color: hsl(201, 11%, 66%);
@@ -20,7 +23,7 @@ p {
 h1,h2,h3,h4,h5,h6 {
     color: hsl(210, 10%, 33%);
     font-weight: 600;
-    margin-bottom: 10px
+    margin: 15px
 }
 img {
     max-width: 100%;
@@ -29,6 +32,7 @@ img {
 .container {
     width: 90%;
     margin: 0 auto;
+    padding: 1.5em;
 }
 
 /* hero */
@@ -41,11 +45,11 @@ img {
 }
 
 .hero h2 {
-    margin-bottom: 20px;
+
 }
 
 .hero p {
-    margin-bottom:20px;
+
 }
 
 .buttons {
@@ -60,9 +64,12 @@ img {
     color: white;
     text-decoration: none;
     font-weight: 600;
-    border-radius: 50px
+    border-radius: 50px;
+    transition: all .5s;
 }
-
+.button:hover {
+    opacity: .7
+}
 .ios {
     background-color: hsl(171, 66%, 44%);
 }
@@ -74,8 +81,7 @@ img {
 /* message */
 
 .message {
-    margin: 80px 0;
-
+    margin: 50px;
 }
 
 /* Computer message */
@@ -85,47 +91,34 @@ img {
 }
 
 .features {
-    margin-top: 30px
+    margin: 50px 0;
 }
 
 .feature {
-    margin: 20px
+    margin: 20px 0;
 }
 
 
 /* on the go */
 .on-the-go {
-    margin-top: 70px;
-    margin-bottom: 30px
+    margin: 50px;
 }
 
-/* more features */
-
-.more-features {
-    margin-top: 20px;
-}
-
-.features-extra {
-    margin-top: 50px;
-}
-.feature {
-    margin-bottom: 40px
-}
-.feature h4 {
-    margin-top: 30px;
-    margin-bottom: 20px;
-}
 
 /* brands */
+.brands {
+    margin: 70px 0;
+}
 .brand {
-    margin: 0 auto;
-    margin-bottom: 70px;
+    margin: 40px auto;
 }
 
 /* footer */
-
-.footer {
+.last {
     background-color: #f5f6f8;
+
+}
+.footer {
     display: flex;
     flex-direction: column;
     padding: 2.5em;
@@ -135,9 +128,21 @@ img {
 .footer img {
     width:10%;
     margin: 0 auto;
-    margin-bottom: 20px
-}
 
+}
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.text a {
+    color: hsl(201, 11%, 66%);
+    text-decoration: none;
+    margin: 10px 0;
+}
+.text a:hover {
+    color:hsl(171, 66%, 44%)
+}
 /* .text {
     margin: 20px 0
 } */
@@ -145,10 +150,19 @@ img {
     margin-bottom: 20px;
 }
 .social a {
-    margin: 0 25px
+    margin: 0 25px;
 }
-
+svg {
+    fill:#4C545C;
+    transition: all .5s;
+}
+svg:hover {
+    fill: #26baa4;
+}
 @media (min-width: 800px) {
+    body {
+        background-image: url("images/bg-header-desktop.png")
+    }
     .hero {
         width: 80%;
         margin: 0 auto;
@@ -158,34 +172,21 @@ img {
         flex-direction: row;
     }
     .message {
-        width: 70%;
+        width: 50%;
         margin-right: auto;
         margin-left: auto;
     }
-
     .computer-features {
         display: flex;
         align-items: center;
-        justify-content: space-between;
-    }
-    /* .comp-image {
-        width: 100%;
-        position: relative;
-        right: 15%;
-    } */
-    .features {
-        margin-top: 0;
-        width: 60%;
-
     }
     .first-feature {
-        margin-top: 0;
         text-align: left;
+        font-size: 20px;
+        margin-left: 100px;
+        width: 50%;
+        align-self: flex-start;
     }
-    .features h4 {
-        margin-bottom: 15px;
-    }
-
     .on-the-go {
         width: 70%;
         margin: 0 auto;
@@ -206,10 +207,14 @@ img {
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
     }
     .left-footer {
         display: flex;
+        flex-grow: 1;
     }
     .footer > * {
         margin: 0;
@@ -217,7 +222,7 @@ img {
     .text {
         margin-right: 30px
     }
-    .social a {
-        width: 100%;
+    .social {
+        flex-grow: 1;
     }
 }
