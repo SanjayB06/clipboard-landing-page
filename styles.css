@@ -29,7 +29,6 @@ img {
 .container {
     width: 90%;
     margin: 0 auto;
-    padding: 1.5em;
 }
 
 /* hero */
@@ -169,11 +168,11 @@ img {
         align-items: center;
         justify-content: space-between;
     }
-    .comp-image {
-        /* width: 100%; */
+    /* .comp-image {
+        width: 100%;
         position: relative;
         right: 15%;
-    }
+    } */
     .features {
         margin-top: 0;
         width: 60%;
