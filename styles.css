@@ -6,8 +6,11 @@
     padding: 0;
     margin: 0;
     font-family: "Bai Jamjuree",sans-serif;
-    text-align: center;
     font-weight: 400;
+}
+
+body {
+    text-align: center;
 }
 p {
     color: hsl(201, 11%, 66%);
@@ -115,9 +118,6 @@ img {
 }
 
 /* brands */
-.brand:first-of-type {
-    margin-top: 100px;
-}
 .brand {
     margin: 0 auto;
     margin-bottom: 70px;
@@ -134,7 +134,7 @@ img {
 }
 
 .footer img {
-    width:30px;
+    width:10%;
     margin: 0 auto;
     margin-bottom: 20px
 }
@@ -147,4 +147,78 @@ img {
 }
 .social a {
     margin: 0 25px
+}
+
+@media (min-width: 800px) {
+    .hero {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .buttons {
+        flex-direction: row;
+    }
+    .message {
+        width: 70%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .computer-features {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .comp-image {
+        /* width: 100%; */
+        position: relative;
+        right: 15%;
+    }
+    .features {
+        margin-top: 0;
+        width: 60%;
+
+    }
+    .first-feature {
+        margin-top: 0;
+        text-align: left;
+    }
+    .features h4 {
+        margin-bottom: 15px;
+    }
+
+    .on-the-go {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .features-extra {
+        display: flex;
+    }
+    .features-extra .feature {
+        width: 33%;
+    }
+    .brands {
+        display: flex;
+        margin-top: 30px;
+    }
+
+    .footer {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .left-footer {
+        display: flex;
+    }
+    .footer > * {
+        margin: 0;
+    }
+    .text {
+        margin-right: 30px
+    }
+    .social a {
+        width: 100%;
+    }
 }
